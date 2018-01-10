@@ -67,7 +67,6 @@ int main(int argc, char ** argv)
         {
             if (event.key.keysym.sym==SDLK_SPACE)
             {
-
                 break;
             }
 
@@ -109,8 +108,8 @@ int main(int argc, char ** argv)
                     {
                         for(int j=-5;j<5;j++)
                         {
-                            if( (640*(mouseY+j)+mouseX+i < 640*480) && (640*(mouseY+j)+mouseX+i >0) )
-                            pixels[640*(mouseY+j)+mouseX+i]=0;
+                            if( (640*(mouseY+j)+mouseX+i < 640*380) && (640*(mouseY+j)+mouseX+i >0) )//was 480
+                                pixels[640*(mouseY+j)+mouseX+i]=0;
                         }
                     }
 
